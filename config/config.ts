@@ -169,4 +169,5 @@ export default {
   */
   history: 'hash',
   outputPath: 'docs',
+  publicPath: 'http://dev.local:5000/'
 } as IConfig
