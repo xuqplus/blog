@@ -95,38 +95,17 @@ export default {
           path: '/user/login',
           component: './user/login',
         },
+        {
+          name: 'login',
+          path: '/user/login2',
+          component: './user/login2',
+        },
       ],
     },
     {
       path: '/',
-      component: '../layouts/SecurityLayout',
-      routes: [
-        {
-          path: '/',
-          component: '../layouts/BasicLayout',
-          authority: ['admin', 'user'],
-          routes: [
-            {
-              path: '/',
-              redirect: '/welcome',
-            },
-            {
-              path: '/welcome',
-              name: 'welcome',
-              icon: 'smile',
-              component: './Welcome',
-            },
-            {
-              component: './404',
-            },
-          ],
-        },
-        {
-          component: './404',
-        },
-      ],
+      redirect: '/user/login2',
     },
-
     {
       component: './404',
     },
@@ -189,5 +168,5 @@ export default {
   },
   */
   history: 'hash',
-  outputPath: 'docs'
+  outputPath: 'docs',
 } as IConfig
