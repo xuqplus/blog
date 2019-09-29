@@ -189,4 +189,5 @@ export default {
   },
   */
   history: 'hash',
+  outputPath: 'docs'
 } as IConfig
