@@ -155,7 +155,7 @@ export default {
     },
   },
   manifest: {
-    basePath: '/blog/',
+    basePath: '/',
   },
   chainWebpack: webpackPlugin,
   /*
