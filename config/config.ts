@@ -167,7 +167,8 @@ export default {
     },
   },
   */
+  base: '/blog/',
   history: 'hash',
   outputPath: 'docs',
-  publicPath: 'http://dev.local:5000/'
+  publicPath: 'http://dev.local:5000/',
 } as IConfig
